@@ -1,0 +1,691 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*tutor profile secttion style start*/
+
+#tutor_profile{
+    background-color: #f9fafb;
+    padding: 65px 0px;
+}
+.tutor_avatar{
+    margin-bottom: 20px;
+}
+.tutor_avatar img{
+    -webkit-box-shadow: 10px 17px 33px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 17px 33px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 17px 33px -8px rgba(0,0,0,0.75);
+}
+.tutor_name h3,.tutor_price h3{
+    font-family: 'Roboto', sans-serif;
+    font-size:21px;
+    font-weight: bold;
+    color: #303336;
+}
+.tutor_institute p{
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #637381;
+}
+.review_scale{
+     font-family: 'Roboto', sans-serif;
+    color:white;
+        background: #2EDBCA;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+.count_review{
+    font-size: 16px;
+     
+    line-height: 20px;
+    
+      font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #3c90f0;
+}
+.count_review:hover{
+text-decoration: none;
+}
+.lessoncount{
+     
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    color: #212b36;
+    font-weight: 400;
+    color: #118991;
+}
+.lessoncount span{
+    font-weight: bold;
+}
+/*tutor profile section style end*/
+/*about section style start*/
+
+.about_me_title,.sec_title{
+        font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    color: #212b36;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #1867c2;
+    margin-bottom: 15px;
+}
+
+/*about section style end*/
+
+/*interview section style start*/
+
+.interview{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #f2f5f7;
+    padding: 18px 20px;
+}
+.interview_content h4{
+     font-family: 'Roboto', sans-serif;
+    color: #118991;
+    font-weight: normal;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+.interview_content p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+/*interview section stye end*/
+
+/*question section style start*/
+.question h3{
+    font-size: 18px;
+}
+/*question section style end*/
+
+/*content wrapper style start*/
+
+.content_wrapper{
+    padding: 24px 26px;
+     
+        border: 1px solid transparent;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(63,63,68,0.15), 0 0 0 1px rgba(63,63,68,0.05);
+    border-radius: 3px;
+    position: relative;
+    border-bottom: solid 1px #dfe3e8;
+}
+
+/*content wrapper style end*/
+/*start 5 star rating style*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  width: 100%;
+  position: relative;
+/*  text-align: center;*/
+
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  color: #09c;
+  font-size: 22px;
+  width: 25px;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  cursor: pointer;
+  color: #09c;
+  -webkit-animation: mymove 2s;
+  animation: mymove 2s;
+  animation-direction:normal;
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+     
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  from {color: #94e8ff;}
+  to {color: #09c;}
+}
+
+/*end 5 start rating style */
+
+
+/*save profile style start*/
+
+.save_profile a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #1867c2;
+}
+.save_profile a:hover{
+    text-decoration: none;
+}
+.save_profile a::before{
+        content: '';
+    display: inline-block;
+    background-image: url(../img/save.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 19px;
+    padding-left: 4px;
+    vertical-align: sub;
+    margin-right: 5px;
+    
+}
+/*save profile style end*/
+
+
+/*about info style start*/
+.about_info{
+    clear: both;
+}
+.about_info .more{
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #637381;
+}
+.morelink{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+.morelink:hover{
+    text-decoration: none;
+    
+}
+.morelink::after {
+    content: "";
+    height: 5px;
+    border-top: solid 5px #3c90f0;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    left: 90px;
+    vertical-align: middle;
+    bottom: 1px;
+    position: absolute;
+    top: 10px;
+}
+.less{
+    position: relative;
+}
+ .less::after{
+       content: "";
+    height: 5px;
+    border-top: 0;
+    border-bottom: solid 5px #3c90f0!important;
+    border-left: solid 5px transparent!important;
+    border-right: solid 5px transparent!important;
+     left: 90px;
+     top: 10px;
+    vertical-align: middle;
+    bottom: 6px;
+    position: absolute;
+}
+/*about infor style end*/
+
+/*interview section style start*/
+
+.interview_image{
+    width:8%;
+    margin-right: 2%;
+        
+}
+.interview_content{
+    width:90%;
+}
+ .morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+/*interview section style end*/
+/*sidebar wrapper style start*/
+.sidebar_wrapper{
+        padding: 24px 0px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(63,63,68,0.15), 0 0 0 1px rgba(63,63,68,0.05);
+    border-radius: 3px;
+    position: relative;
+    border-bottom: solid 1px #dfe3e8;
+}
+/*sidebar wrapper style end*/
+/*sidebar conatct form style start*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding: 0px 25px;
+	 
+}
+
+#contact h3 {
+	color: #1867c2;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+/*start raying yellow*/
+/*@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css);*/
+
+
+ 
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+  left: 5px;
+  top: 0px;
+}
+
+.rating > label { 
+  color: #ddd; 
+  
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+/*sidebar contact form style end*/
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
